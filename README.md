@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-Project Title
+#Project Title
 
 Cash Register
 Achievement
