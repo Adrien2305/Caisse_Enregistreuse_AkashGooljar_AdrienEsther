@@ -24,7 +24,7 @@ int main()
  
 
     double amount,amt_money,tot_amt;
-    int n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, n1,n50c,n20c,n5c,z;
+    int n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, c1,c50c,c20c,c5c,z;
     char user_choice ;
 do{
     srand(time(0));
@@ -88,7 +88,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n2000);
                     printf("\nNumber of 2000 notes remaining: %d\n", n2000);
 
@@ -128,7 +128,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n1000);
                     printf("\nNumber of 1000 notes remaining: %d\n", n1000);
                 }
@@ -161,7 +161,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n500);
                     printf("\nNumber of 500 notes remaining: %d\n", n500);
                 }
@@ -195,7 +195,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n200);
                     printf("\nNumber of 200 notes remaining: %d\n", n2000);
                 }
@@ -229,7 +229,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n100);
                     printf("\nNumber of 100 notes remaining: %d\n", n100);
                 }
@@ -262,7 +262,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n50);
                     printf("\nNumber of 100 notes remaining: %d\n", n50);
                 }
@@ -296,7 +296,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n25);
                     printf("\nNumber of 100 notes remaining: %d\n", n25);
                 }
@@ -330,7 +330,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n20);
                     printf("\nNumber of 100 notes remaining: %d\n", n20);
                 }
@@ -364,7 +364,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n10);
                     printf("\nNumber of 100 notes remaining: %d\n", n10);
                 }
@@ -397,7 +397,7 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
+                    printf("Please enter the number of cash you want to insert: \n");
                     scanf("%d", &n5);
                     printf("\nNumber of 100 notes remaining: %d\n", n5);
                 }
@@ -412,16 +412,16 @@ do{
                 printf("\nNumber of  20 Coins remaining: %d\n", y );
   } 
   
-    n1=10;
+    c1=10;
      
-     y = n1 - calcule_monnaie(&w, 1 * 100);
+     y = c1 - calcule_monnaie(&w, 1 * 100);
         switch (c) {
 
            case 0:
                if(y<0)
                 {
                 
-                printf("\n Rs 5 Coins have finished: \n ");
+                printf("\n Rs 1 Coins have finished: \n ");
                 printf("Enter 0 to stop the program or 1 to refill:  \n");
                 scanf("%d", &z);
                 
@@ -430,9 +430,9 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
-                    scanf("%d", &n1);
-                    printf("\nNumber of 1 Coins remaining: %d\n", n1);
+                    printf("Please enter the number of coins you want to insert: \n");
+                    scanf("%d", &c1);
+                    printf("\nNumber of 1 Coins remaining: %d\n", c1);
                 }
                 
                 break;
@@ -445,9 +445,9 @@ do{
                 printf("\nNumber of  1 Coins remaining: %d\n", y );
   } 
   
-    n50c=10;
+    c50c=10;
      
-     y = n50c - calcule_monnaie(&w, 50);
+     y = c50c - calcule_monnaie(&w, 50);
         switch (c) {
 
            case 0:
@@ -463,9 +463,9 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
-                    scanf("%d", &n50c);
-                    printf("\nNumber of 50 cents remaining: %d\n", n50c);
+                    printf("Please enter the number of coins you want to insert: \n");
+                    scanf("%d", &c50c);
+                    printf("\nNumber of 50 cents remaining: %d\n", c50c);
                 }
                 
                 break;
@@ -479,9 +479,9 @@ do{
   } 
   
   
-  n20c=10;
+  c20c=10;
      
-     y = n50c - calcule_monnaie(&w, 20);
+     y = c20c - calcule_monnaie(&w, 20);
         switch (c) {
 
            case 0:
@@ -497,9 +497,9 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
-                    scanf("%d", &n20c);
-                    printf("\nNumber of 50 cents remaining: %d\n", n20c);
+                    printf("Please enter the number of coins you want to insert: \n");
+                    scanf("%d", &c20c);
+                    printf("\nNumber of 20 cents remaining: %d\n", c20c);
                 }
                 
                 break;
@@ -513,9 +513,9 @@ do{
   } 
   
   
-    n5c=10;
+    c5c=10;
      
-     y = n50c - calcule_monnaie(&w, 5);
+     y = c5c - calcule_monnaie(&w, 5);
         switch (c) {
 
            case 0:
@@ -531,9 +531,9 @@ do{
                 }
                 else
                 {
-                    printf("Inserer le nombre de billets svp: \n");
-                    scanf("%d", &n5c);
-                    printf("\nNumber of 5 cents remaining: %d\n", n5c);
+                    printf("Please enter the number of coins you want to insert: \n");
+                    scanf("%d", &c5c);
+                    printf("\nNumber of 5 cents remaining: %d\n", c5c);
 
 
                 }
@@ -557,11 +557,6 @@ do{
 
 }while(user_choice=='y');
 printf("\n ---- Thank You For Your Transaction ----- \n" );
-  
-
-  
-  
-  
   
     
     return 0;
