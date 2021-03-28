@@ -33,7 +33,7 @@ the program will alert it to the user and will ask him to enter a new digit valu
 
 Here is the first code:
 ```sh
->>>>>>> dev
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
