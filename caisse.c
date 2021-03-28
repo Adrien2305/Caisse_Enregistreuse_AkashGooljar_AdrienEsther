@@ -24,7 +24,9 @@ int main()
  
 
     double amount,amt_money,tot_amt;
-    int b2000,n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, n1,n50c,n20c,n5c,z;
+    int n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, n1,n50c,n20c,n5c,z;
+    char user_choice ;
+do{
     srand(time(0));
 
     amount =rand() % 10000 ;
@@ -48,7 +50,7 @@ int main()
     
     
         int x = (int)(tot_amt * 100.0 + 0.5);
-        printf("No. of Rs1000 bill: %d\n", calcule_monnaie(&x, 2000 * 100) );
+        printf("No. of Rs2000 bill: %d\n", calcule_monnaie(&x, 2000 * 100) );
         printf("No. of Rs1000 bill: %d\n", calcule_monnaie(&x, 1000 * 100) );
         printf("No. of Rs500 bill: %d\n",calcule_monnaie(&x, 500 * 100) );
         printf("No. of Rs200 bill: %d\n", calcule_monnaie(&x, 200 * 100) );
@@ -68,6 +70,7 @@ int main()
         int y;
         n2000=10;
         int c=0;
+        
         y = n2000 - calcule_monnaie(&w, 2000 * 100);
         switch(c){
 
@@ -88,6 +91,8 @@ int main()
                     printf("Inserer le nombre de billets svp: \n");
                     scanf("%d", &n2000);
                     printf("\nNumber of 2000 notes remaining: %d\n", n2000);
+
+
                 }
                 
                 break;
@@ -99,7 +104,9 @@ int main()
         
             default: 
                 printf("\nNumber of 2000 notes remaining: %d\n", y );
-     
+        
+
+
         }
         
      n1000=10;
@@ -527,6 +534,8 @@ int main()
                     printf("Inserer le nombre de billets svp: \n");
                     scanf("%d", &n5c);
                     printf("\nNumber of 5 cents remaining: %d\n", n5c);
+
+
                 }
                 
                 break;
@@ -537,9 +546,19 @@ int main()
             }
             default: 
                 printf("\nNumber of  5 Cents remaining: %d\n", y );
+
+              
   } 
+
   
+    printf("\n");
+    printf("Do you want to continue [y/n] : ");
+    scanf("%s", &user_choice);
+
+}while(user_choice=='y');
+printf("\n ---- Thank You For Your Transaction ----- \n" );
   
+
   
   
   
