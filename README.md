@@ -1,38 +1,4 @@
-#Project Title
 
-Cash Register
-Achievement
-
-The goals of this project work is to calculate the change and to determine which mauritian Banknotes and coins to return to the user. Secondly ,The program should also be able to alert the user the state of the stocks for each transaction.
-Collaborators
-
-    Adrien Esther
-    Akash Gooljar
-
-Getting started
-
-Before we started, we cloned the project work to local in our terminal.
-
-git clone https://github.com/Adrien2305/Caisse_Enregistreuse_AkashGooljar_AdrienEsther.git
-cd Caisse_Enregistreuse_AkashGooljar_AdrienEsther
-
-Now , we have created a branch name dev and CAISSE
-
-git branch dev
-git branch CAISSE
-
-The first program will be generated in the branch CAISSE. so , we will switch to the branch CAISSE by using the function:
-
-git checkout CAISSE
-
-Running the first test
-Step 1:
-
-The first script will generate a random number that the user will have to pay. The user will enter a number and if the number is less than he owes, the program will alert it to the user and will ask him to enter a new digit value again.
-
-Here is the first code:
-
-=======
 # Project Title
 Cash Register
 ## _Achievement_
