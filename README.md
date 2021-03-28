@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Project Title
 
 Cash Register
@@ -32,6 +33,42 @@ The first script will generate a random number that the user will have to pay. T
 
 Here is the first code:
 
+=======
+# Project Title
+Cash Register
+## _Achievement_
+The goals of this project work is to calculate the change and to determine which mauritian Banknotes and coins to return to the user.
+Secondly ,The program should also be able to alert the user the state of the stocks for each transaction.
+
+## Collaborators
+- Adrien Esther
+- Akash Gooljar
+
+## _Getting started_
+Before we started, we cloned the project work to local in our terminal.
+```sh
+git clone https://github.com/Adrien2305/Caisse_Enregistreuse_AkashGooljar_AdrienEsther.git
+cd Caisse_Enregistreuse_AkashGooljar_AdrienEsther
+```
+Now , we have created a branch name dev and CAISSE
+```sh
+git branch dev
+git branch CAISSE
+```
+The first program will be generated in the branch CAISSE.
+so , we will switch to the branch CAISSE by using the function:
+```sh
+git checkout CAISSE
+```
+# _Running the  first test_
+## Step 1:
+The first script will generate a random number that the user will have to pay.
+The user will enter a number and if the number is less than he owes,
+the program will alert it to the user and will ask him to enter a new digit value again.
+
+Here is the first code:
+```sh
+>>>>>>> dev
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -64,6 +101,7 @@ int main()
     return 0;
 
 }
+<<<<<<< HEAD
 
 In order to execute the script , we need to write :
 
@@ -94,10 +132,42 @@ Step 2:
 
 Now the next step is to calcule the amount to return by using a function:
 
+=======
+```
+In order to execute the script , we need to write :
+```sh
+gcc -o caisse caisse.c
+./caisse
+```
+After we created the code, we need to add the modified files for the next commit:
+```sh
+git add .
+```
+Make a commit of the files :
+```sh
+git commit -m "[CAISSE]-Premier modification"
+```
+Create a tag v0.1:
+```sh
+git tag v0.1
+```
+Push the tag on the server :
+```sh
+git push origin tag v0.1
+```
+Then finally push the file on the server :
+```sh
+git push origin CAISSE
+```
+## Step 2:
+Now the next step is to calcule the amount to return by using a function:
+```sh
+>>>>>>> dev
 float amt, total, num, generated, change, amt_ret;
 amt_ret = amt - num;
         printf("Amount to return = %f \n",amt_ret);
 
+<<<<<<< HEAD
 Step 3:
 
 We need to determine which banknotes or coins to be returned to the user,the higher coins and notes will be entitle. But before proceeding, we switched to the branch dev:
@@ -106,6 +176,17 @@ git checkout dev
 
 Now we create the code ;
 
+=======
+```
+## Step 3:
+We need to determine which banknotes or coins to be returned to the user,the higher coins and notes will be entitle.
+But before proceeding, we switched to the branch dev:
+```sh
+git checkout dev
+```
+Now we create the code ;
+```sh
+>>>>>>> dev
 #include <math.h> 
 #include <stdio.h> 
 #include <stdlib.h> 
@@ -165,6 +246,7 @@ int main()
         printf("No. of 50 cents: %d\n", calcule_monnaie(&x, 50) );
         printf("No. of 20 cents: %d\n", calcule_monnaie(&x, 20) );
         printf("No. of 5 cent: %d\n", calcule_monnaie(&x, 5) );
+<<<<<<< HEAD
 
 In order to execute the script , we need to write :
 
@@ -195,6 +277,38 @@ Step 4:
 
 Now we will will consider that we have a limited amount of coins and notes into the cash register, so for each transaction the user make , the program will be able to indicate the state of the stocks.
 
+=======
+```
+In order to execute the script , we need to write :
+```sh
+gcc -o caisse caisse.c
+./caisse
+```
+After created the code, we need to add the modified files for the next commit:
+```sh
+git add .
+```
+Make a commit of the files :
+```sh
+git commit -m "[dev]-modification pour remplir la caisse"
+```
+Create the tag v0.2:
+```sh
+git tag v0.2
+```
+Push the tag on the server:
+```sh
+git push origin tag v0.2
+```
+Then finally push the file on the server :
+```sh
+git push origin dev
+```
+## Step 4:
+Now we will will consider that we have a limited amount of coins and notes into the cash register,
+so for each transaction the user make , the program will be able to indicate the state of the stocks.
+```sh
+>>>>>>> dev
 double amount,amt_money,tot_amt;
     int n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, n1,n50c,n20c,n5c,z;
     int n2000, n1000, n500, n200, n100, n50, n25, n20, n10, n5, c1,c50c,c20c,c5c,z;
@@ -277,6 +391,7 @@ do{
         
         }
 
+<<<<<<< HEAD
 Explanation of the code:
 
     The program will first execute the code into the 'do while loop' in order to calculate the amount to return to the user then will continue into the 'while loop' and the 'swicth case' so as to determine the state of the stocks of banknotes and coins remaining.
@@ -300,3 +415,29 @@ git push origin tag v0.3
 Then finally push the file on the server :
 
 git push origin dev
+=======
+```
+## Explanation of the code:
+- The program will first execute the code into the  'do while loop' in order to calculate the amount to return to the user then will continue into the 'while loop' and the 'swicth case' so as to determine the state of the stocks of banknotes and coins remaining.
+
+After created the code, we need to add the modified files for the next commit:
+```sh
+git add .
+```
+Make a commit of the files :
+```sh
+git commit -m "[dev]-modification pour fermer la caisse ou continu"
+```
+Create the tag v0.3:
+```sh
+git tag v0.3
+```
+Push the tag on the server:
+```sh
+git push origin tag v0.3
+```
+Then finally push the file on the server :
+```sh
+git push origin dev
+```
+>>>>>>> dev
