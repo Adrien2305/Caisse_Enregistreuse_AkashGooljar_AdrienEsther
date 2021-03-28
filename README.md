@@ -405,4 +405,4 @@ Then finally push the file on the server :
 ```sh
 git push origin dev
 ```
->>>>>>> dev
+
